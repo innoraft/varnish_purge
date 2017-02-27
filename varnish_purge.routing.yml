@@ -1,0 +1,31 @@
+varnish_purge.add_domain:
+  path: 'admin/config/development/performance/add-domain'
+  defaults:
+    _title: 'Add Domain'
+    _form: '\Drupal\varnish_purge\Form\AddDomain'
+  requirements:
+    _permission: 'administer varnish purge'
+
+varnish_purge.varnish_cc_all:
+  path: 'admin/config/development/performance/varnish-cc-all'
+  defaults:
+    _title: 'Clear All Cache'
+    _form: '\Drupal\varnish_purge\Form\VarnishCcAll'
+  requirements:
+    _permission: 'administer varnish purge'
+
+varnish_purge.varnish_ban:
+  path: 'admin/config/development/performance/varnish-ban'
+  defaults:
+    _title: 'Manual Ban'
+    _form: '\Drupal\varnish_purge\Form\VarnishBan'
+  requirements:
+    _permission: 'administer varnish purge'
+
+varnish_purge.varnish_purge:
+  path: 'admin/config/development/performance/varnish-purge'
+  defaults:
+    _title: 'Manual Purge'
+    _form: '\Drupal\varnish_purge\Form\VarnishPurge'
+  requirements:
+    _permission: 'administer varnish purge'

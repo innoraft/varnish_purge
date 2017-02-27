@@ -1,0 +1,24 @@
+system.performance_settings:
+  route_name: system.performance_settings
+  title: 'Performance'
+  base_route: system.performance_settings
+varnish_purge.add_domain:
+  route_name: varnish_purge.add_domain
+  title: 'Add Domain'
+  base_route: system.performance_settings
+  weight: 100
+varnish_purge.varnish_cc_all:
+  route_name: varnish_purge.varnish_cc_all
+  title: 'Clear All Cache'
+  base_route: system.performance_settings
+  weight: 100
+varnish_purge.varnish_ban:
+  route_name: varnish_purge.varnish_ban
+  title: 'Manual Ban'
+  base_route: system.performance_settings
+  weight: 100
+varnish_purge.varnish_purge:
+  route_name: varnish_purge.varnish_purge
+  title: 'Manual Purge'
+  base_route: system.performance_settings
+  weight: 100
